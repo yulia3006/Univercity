@@ -151,13 +151,30 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 1,
       "metadata": {
-        "id": "yNkJFYfeKZ4L"
+        "id": "yNkJFYfeKZ4L",
+        "outputId": "5abe9440-aad9-47f4-d961-f2b6db422ffb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "179\n",
+            "Да\n"
+          ]
+        }
+      ],
       "source": [
-        "# Ваш код"
+        "s=input('')\n",
+        "if len(s)==3:\n",
+        "  print('Да')\n",
+        "else:\n",
+        "  print('Нет')"
       ]
     },
     {
@@ -171,13 +188,32 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 5,
       "metadata": {
-        "id": "MTsEFOygKZ8k"
+        "id": "MTsEFOygKZ8k",
+        "outputId": "3d15db11-5085-4f95-d501-3f56a0482cde",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "10\n",
+            "Да\n"
+          ]
+        }
+      ],
       "source": [
-        "# Ваш код"
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "if a>0 or b>0:\n",
+        "  print('Да')\n",
+        "if a<0 and b<0:\n",
+        "  print('Нет')"
       ]
     },
     {
@@ -211,13 +247,31 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 7,
       "metadata": {
-        "id": "rnbGpsZeKcFO"
+        "id": "rnbGpsZeKcFO",
+        "outputId": "3ce17726-4a8c-4280-af1d-09d064e39c0c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2332\n",
+            "Да\n"
+          ]
+        }
+      ],
       "source": [
-        "# Ваш код"
+        "s = str(input())\n",
+        "a = s[::-1]\n",
+        "if s == a:\n",
+        "  print(\"Да\")\n",
+        "else:\n",
+        "  print(\"Нет\")"
       ]
     },
     {
@@ -231,14 +285,42 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 18,
       "metadata": {
-        "id": "LTZAtKHWKcIk"
+        "id": "LTZAtKHWKcIk",
+        "outputId": "71930a11-00f2-4ca0-d940-f59963c285a5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "30\n"
+          ]
+        }
+      ],
       "source": [
-        "# Ваш код"
+        "n=int(input())\n",
+        "if n==1 or n==3 or n==5 or n==7 or n==8 or n==10 or n==12:\n",
+        "  print('31')\n",
+        "if n==2:\n",
+        "  print('28')\n",
+        "if n==4 or n==6 or n==9 or n==11:\n",
+        "  print('30')"
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "z8BJesfnm0Y5"
+      },
+      "execution_count": null,
+      "outputs": []
     },
     {
       "cell_type": "markdown",
