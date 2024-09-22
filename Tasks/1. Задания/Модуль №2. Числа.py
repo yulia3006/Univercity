@@ -279,10 +279,10 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 4,
       "metadata": {
         "id": "L60_0P2eCZVe",
-        "outputId": "abf80c77-4164-4150-ddaa-13797c12dc69",
+        "outputId": "f2a2e4ae-fc0b-4b13-f2dc-f4f088e0d557",
         "colab": {
           "base_uri": "https://localhost:8080/"
         }
@@ -293,11 +293,15 @@
           "name": "stdout",
           "text": [
             "1\n",
-            "1\n"
+            "4\n"
           ]
         }
       ],
-      "source": []
+      "source": [
+        "n=int(input())\n",
+        "d=(n-4)%7\n",
+        "print(d)"
+      ]
     },
     {
       "cell_type": "markdown",
