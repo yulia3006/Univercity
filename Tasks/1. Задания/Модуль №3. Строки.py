@@ -160,36 +160,28 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 9,
       "metadata": {
         "id": "YdeSirSGHs9h",
-        "outputId": "876aeff7-7996-4f9f-a833-6726aa18f6a7",
+        "outputId": "75153e4a-f2b3-4978-e5b0-e43500629f0b",
         "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 176
+          "base_uri": "https://localhost:8080/"
         }
       },
       "outputs": [
         {
-          "name": "stdout",
           "output_type": "stream",
+          "name": "stdout",
           "text": [
-            "ver@\n"
-          ]
-        },
-        {
-          "output_type": "error",
-          "ename": "AttributeError",
-          "evalue": "'str' object has no attribute 'pop'",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
-            "\u001b[0;32m<ipython-input-11-c1d138a6f21f>\u001b[0m in \u001b[0;36m<cell line: 2>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0ms\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ms\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpop\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'@'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-            "\u001b[0;31mAttributeError\u001b[0m: 'str' object has no attribute 'pop'"
+            "john@smith.com\n",
+            "johnsmith.com\n"
           ]
         }
       ],
-      "source": []
+      "source": [
+        "str=input('')\n",
+        "print(str.replace(\"@\", ''))"
+      ]
     }
   ]
 }
