@@ -154,10 +154,10 @@
       "execution_count": 1,
       "metadata": {
         "id": "yNkJFYfeKZ4L",
-        "outputId": "5abe9440-aad9-47f4-d961-f2b6db422ffb",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "outputId": "5abe9440-aad9-47f4-d961-f2b6db422ffb"
       },
       "outputs": [
         {
@@ -191,10 +191,10 @@
       "execution_count": 5,
       "metadata": {
         "id": "MTsEFOygKZ8k",
-        "outputId": "3d15db11-5085-4f95-d501-3f56a0482cde",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "outputId": "3d15db11-5085-4f95-d501-3f56a0482cde"
       },
       "outputs": [
         {
@@ -250,10 +250,10 @@
       "execution_count": 7,
       "metadata": {
         "id": "rnbGpsZeKcFO",
-        "outputId": "3ce17726-4a8c-4280-af1d-09d064e39c0c",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "outputId": "3ce17726-4a8c-4280-af1d-09d064e39c0c"
       },
       "outputs": [
         {
@@ -288,10 +288,10 @@
       "execution_count": 18,
       "metadata": {
         "id": "LTZAtKHWKcIk",
-        "outputId": "71930a11-00f2-4ca0-d940-f59963c285a5",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "outputId": "71930a11-00f2-4ca0-d940-f59963c285a5"
       },
       "outputs": [
         {
@@ -333,13 +333,36 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 7,
       "metadata": {
-        "id": "iM0C5CLKKcLD"
+        "id": "iM0C5CLKKcLD",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e049afed-64d0-4e77-c2c9-019d7d5f2f69"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "5\n",
+            "10\n",
+            "2\n"
+          ]
+        }
+      ],
       "source": [
-        "# Ваш код"
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "if a==b==c:\n",
+        "  print('3')\n",
+        "if a==b or b==c or a==c:\n",
+        "  print('2')\n",
+        "if a!=b and b!=c and a!=c:\n",
+        "  print('0')"
       ]
     },
     {
@@ -359,7 +382,12 @@
       },
       "outputs": [],
       "source": [
-        "# Ваш код"
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "if b%2==0 and a%2!=0:\n",
+        "  print('Белая')\n",
+        "else:\n",
+        "  print('Черная')\n"
       ]
     },
     {
@@ -373,13 +401,36 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 21,
       "metadata": {
-        "id": "GM7OfGbLKcPc"
+        "id": "GM7OfGbLKcPc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b845d405-350f-49d1-d9ef-936987c9058c"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "1\n",
+            "2\n",
+            "6\n",
+            "Да\n"
+          ]
+        }
+      ],
       "source": [
-        "# Ваш код"
+        "x1 = int(input())\n",
+        "y1 = int(input())\n",
+        "x2 = int(input())\n",
+        "y2 = int(input())\n",
+        "if (x1 + y1) % 2 == 0 and (x2 + y2) % 2 == 0:\n",
+        "    print(\"Да\")\n",
+        "else:\n",
+        "    print(\"Нет\")"
       ]
     },
     {
@@ -399,7 +450,23 @@
       },
       "outputs": [],
       "source": [
-        "# Ваш код"
+        "m=int(input())\n",
+        "d=int(input())\n",
+        "if m == 4 or m == 6 or m == 9 or m == 11:\n",
+        "  if d < 30:\n",
+        "  print({d + 1}-{m}-2024)\n",
+        "  else:\n",
+        "    print({d - 29}-{m + 1}-2024)\n",
+        "elif m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:\n",
+        "  if d < 31:\n",
+        "    print({d + 1}-{m}-2024)\n",
+        "  else:\n",
+        "    print({d - 30}-{m + 1}-2024)\n",
+        "if m == 2:\n",
+        "  if d < 28:\n",
+        "    print({d + 1}-{m}-2024)\n",
+        "  else:\n",
+        "    print({d - 27}-{m + 1}-2024)"
       ]
     }
   ]
