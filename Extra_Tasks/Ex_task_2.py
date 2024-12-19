@@ -1,0 +1,173 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO55LcuCdwyOBHHJKO+jJX1",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yulia3006/Univercity/blob/main/Extra_Tasks/Ex_task_2.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bPl_tkDOfjU-",
+        "outputId": "7841157f-7d5c-4d37-fb91-68acc93118c1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "    1. Добавить контакт\n",
+            "    2. Удалить контакт\n",
+            "    3. Показать контакты\n",
+            "    4. Изменить номер\n",
+            "    5. Выход\n",
+            "    \n",
+            "Выберите опцию: 1\n",
+            "Введите имя: юля\n",
+            "Введите телефон: 89049596413\n",
+            "\n",
+            "    1. Добавить контакт\n",
+            "    2. Удалить контакт\n",
+            "    3. Показать контакты\n",
+            "    4. Изменить номер\n",
+            "    5. Выход\n",
+            "    \n",
+            "Выберите опцию: 3\n",
+            "Юля +79049596413\n",
+            "\n",
+            "    1. Добавить контакт\n",
+            "    2. Удалить контакт\n",
+            "    3. Показать контакты\n",
+            "    4. Изменить номер\n",
+            "    5. Выход\n",
+            "    \n",
+            "Выберите опцию: 2\n",
+            "Введите имя: юля\n",
+            "\n",
+            "    1. Добавить контакт\n",
+            "    2. Удалить контакт\n",
+            "    3. Показать контакты\n",
+            "    4. Изменить номер\n",
+            "    5. Выход\n",
+            "    \n"
+          ]
+        }
+      ],
+      "source": [
+        "contacts = {}\n",
+        "def add(name, phone):\n",
+        "    copy = contacts.copy()\n",
+        "    name = replace_name(name)\n",
+        "    phone = replace_phone(phone)\n",
+        "    copy[name] = phone\n",
+        "    return copy\n",
+        "\n",
+        "def delete_contact(name):\n",
+        "    copy = contacts.copy()\n",
+        "    del copy[replace_name(name)]\n",
+        "    return copy\n",
+        "\n",
+        "def view():\n",
+        "    if len(contacts) == 0:\n",
+        "        print(\"Контактов нет в телефонной книге\")\n",
+        "        pass\n",
+        "    for i in contacts.items():\n",
+        "        print(' '.join(i))\n",
+        "\n",
+        "def edit(name, phone):\n",
+        "    copy = contacts.copy()\n",
+        "    if  not name in copy:\n",
+        "      print('Нет контакта')\n",
+        "      return copy\n",
+        "\n",
+        "    name1 = replace_name(name)\n",
+        "    phone1 = replace_phone(phone)\n",
+        "    copy[name1] = phone1\n",
+        "    return copy\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "def replace_name(name):\n",
+        "    return name.capitalize()\n",
+        "def replace_phone(phone):\n",
+        "    if len(phone)<10:\n",
+        "      return \"Неправильно введённый номер\"\n",
+        "    if len(phone)>11: return phone[:11]\n",
+        "    if len(phone)==11:\n",
+        "      phone = '+7'+phone[1:]\n",
+        "      return phone\n",
+        "\n",
+        "    return '+7' + phone\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "while True:\n",
+        "    print(\"\"\"\n",
+        "    1. Добавить контакт\n",
+        "    2. Удалить контакт\n",
+        "    3. Показать контакты\n",
+        "    4. Изменить номер\n",
+        "    5. Выход\n",
+        "    \"\"\")\n",
+        "    option = input(\"Выберите опцию: \")\n",
+        "\n",
+        "    if not option.isdigit():\n",
+        "        continue\n",
+        "    casted_option = int(option)\n",
+        "\n",
+        "    if casted_option not in [1, 2, 3, 4, 5]:\n",
+        "        continue\n",
+        "\n",
+        "    if casted_option == 1:\n",
+        "      name=input('Введите имя: ')\n",
+        "      phone=input('Введите телефон: ')\n",
+        "      new = add(name, phone)\n",
+        "\n",
+        "    elif casted_option == 2:\n",
+        "      name=input('Введите имя: ')\n",
+        "      new = delete_contact(name)\n",
+        "\n",
+        "    elif casted_option == 3:\n",
+        "      view()\n",
+        "\n",
+        "    elif casted_option == 4:\n",
+        "      name=input('Введите имя: ')\n",
+        "      phone=input('Введите телефон: ')\n",
+        "      new = edit(name, phone)\n",
+        "\n",
+        "    elif casted_option == 5:\n",
+        "      break\n",
+        "\n",
+        "    contacts = new"
+      ]
+    }
+  ]
+}
