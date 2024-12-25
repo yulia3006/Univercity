@@ -1,0 +1,38 @@
+Исходное слово | Перевод | Количество упоминаний
+привет| hello |2
+да| yes |2
+завтра | tomorrow |2
+ок,| ok |2
+6 | 6 |2
+тебе | for you |2
+ты | you |1
+уже | already |1
+сдать| passed |1
+домашка| homework |1
+по | by |1
+латынь| Latin|1
+смочь| able |1
+встриться?| meet up? |1
+тогда| then |1
+в| in |1
+на | on |1
+курская| Kursk |1
+давай | come on |1
+попозже,| later |1
+у | at |1
+меня| me |1
+пары | couple |1
+до | up to |1
+а | and |1
+сколько| how much | 1
+ехать?|Should i go?|1
+ну | well |1
+минут| minutes | 1
+40| 40 |1
+тогда| then | 1
+поехать| go |1
+навстречу| towards |1
+списаться| write off |1
+
+
+
